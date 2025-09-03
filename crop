@@ -1,3 +1,13 @@
+Modifications to the CLM crop: 
+1- Checking USDA's CDL
+2- Checking and possibly modifying CLM source code.
+=====================================================
+First: incorporating the USDA's CDL into CLM's dynamic land use time series. 
+I downloaded the cdl's for the period of 2007-2022 (available for lower Michigan), others may differ. 
+Now trying to reclassify CDLs to 0.05 (my simulation grid) to match the CLM grid. 
+
+
+
 09/03/2025 === Talked with Aman how to modify the source code. 
 
 grep -rin baset
