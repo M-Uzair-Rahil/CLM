@@ -23,4 +23,6 @@ at the end of croptype.f90 is the equation>   latbaset = baset + baset_latvary_i
 i am changing the:
 1- change the slope  +-30 because the intercept will not have effect as its only a translation in the y axes if the equation is really a linear equation used by CLM for changing the baset.  
 2- the second is the check some codes.
+=====================================================================
+
 
