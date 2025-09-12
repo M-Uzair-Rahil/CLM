@@ -43,5 +43,19 @@ before i change the code. i will look what is baset.
 
 grep -Rin --include='*.F90' -e "baset_mapping" -e "latbaset" /src                  #this will check and find both baset_maping and latebaset
 
+I changed the code to ths: line 831 - 840 of the CropType.F90
+do p = begp,endp
+       if (this%croplive_patch(p)) then ! relative to planting date
+          ivt = patch%itype(p)
+          if ( (trim(this%baset_mapping) == baset_map_latvary) .and. &
+             ((ivt == nswheat) .or. (ivt == nirrig_swheat) .or. &
+              (ivt == nsugarcane) .or. (ivt == nirrig_sugarcane)) ) .or. $
+              (ivt == ncorn)         .or. (ivt == nsoybean) ) ) then
+             rbufslp(p) = max(0._r8, min(pftcon%mxtmp(ivt), &
+             t_ref2m_patch(p)-(SHR_CONST_TKFRZ + this%latbaset_patch(p)))) &
+             * dtime/SHR_CONST_CDAY
+
+I now build the case 
+
 
 
