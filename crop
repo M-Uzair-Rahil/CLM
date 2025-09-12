@@ -41,4 +41,7 @@ biogeochem/CropType.F90:397:              this%latbaset_patch(p) = latbaset(pftc
 i copied cp /glade/work/rahilmoh/CLM/Model/CTSM/src/biogeochem/CropType.F90 ./  to my case directory SourceMode/src.clm
 before i change the code. i will look what is baset. 
 
+grep -Rin --include='*.F90' -e "baset_mapping" -e "latbaset" /src                  #this will check and find both baset_maping and latebaset
+
+
 
