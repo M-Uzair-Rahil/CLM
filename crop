@@ -38,6 +38,6 @@ i am changing the:
 I created a new case (Case78-src_change_bast_latvary(add corn & soybean)) to include soybean and corn and modfy the source code so that the base temperature (baset) will vary with latitude. 
 i searched grep -rin latbaset and found 
 biogeochem/CropType.F90:397:              this%latbaset_patch(p) = latbaset(pftcon%baset(ivt), grc%latdeg(g), this%baset_latvary_intercept, this%baset_latvary_slope)
-i copied cp /glade/work/rahilmoh/CLM/Model/CTSM/src/biogeochem/CropType.F90 ./  to my case directory SourceMode/clm
+i copied cp /glade/work/rahilmoh/CLM/Model/CTSM/src/biogeochem/CropType.F90 ./  to my case directory SourceMode/src.clm
 
 
